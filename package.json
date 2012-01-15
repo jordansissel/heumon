@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "heumon",
   "version": "0.0.1",
   "dependencies": { 
     "serveup": "~0.0.2",
