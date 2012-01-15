@@ -116,6 +116,19 @@ button.green {
   bottom: 0;
   right: 0;
 }
+.event-list .event-list-item {
+  list-style-type: none;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 1px solid #aad;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.30)), color-stop(0.5, rgba(255,255,255,0.10)), color-stop(0.5, rgba(255,255,255,0.00))), #7cccc4;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 8px;
+  margin-top: 4px;
+  text-align: center;
+}
 .event-create #event-data .radio-item input[type="radio"],
 .event-create #event-data .radio-item input[type="checkbox"] {
   display: none;
