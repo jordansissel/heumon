@@ -7,7 +7,7 @@ build:
 heroku-deploy: | build update-cache-manifest
 	git add public/application.css public/application.js
 	git commit public/application.css public/application.js -m "regenerated"
-	git push heroku-2 master
+	git push heroku master
 
 update-cache-manifest: VERSION=$(shell date +%s)
 update-cache-manifest:
