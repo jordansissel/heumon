@@ -5,13 +5,13 @@ build:
 	node /home/jls/node_modules/hem/bin/hem build
 
 heroku-deploy: | build update-cache-manifest
-	git add public/application.css public/application.js
-	git commit public/application.css public/application.js -m "regenerated"
+	-git add public/application.css public/application.js
+	-git commit public/application.css public/application.js -m "regenerated"
 	git push heroku master
 
 heroku-test-deploy: | build update-cache-manifest
-	git add public/application.css public/application.js
-	git commit public/application.css public/application.js -m "regenerated"
+	-git add public/application.css public/application.js
+	-git commit public/application.css public/application.js -m "regenerated"
 	git push heroku-2 master
 
 deploy: | heroku-deploy heroku-test-deploy
