@@ -9,6 +9,42 @@ button.green
   bottom: 0
   right: 0
 
+.event-list
+  ul
+    margin: 0
+    padding: 0
+  .event-list-item
+    list-style-type: none
+    border-radius: 10px
+    border: 1px solid #AAD
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), color-stop(0.5, rgba(255, 255, 255, 0.1)), color-stop(0.5, rgba(255, 255, 255, 0))), #AAE3DD
+    margin-left: 30px
+    margin-right: 30px
+    padding: 8px
+    margin-top: 4px
+    text-align: center
+
+ul.event-recent-list
+  margin: 0
+  padding: 0
+
+  li.event-recent-item
+    margin-left: 30px
+    margin-right: 30px
+    padding: 8px
+    text-align: left
+    list-style-type: none
+
+  li.event-recent-item:nth-child(2n)
+    border-top: 1px solid #BBB
+    border-bottom: 1px solid #BBB
+    background-color: #F4F4FF
+  li.event-recent-item:nth-child(2n + 1)
+    background-color: #FAFAFF
+  li.event-recent-item:last
+    border-bottom: 0px
+
+
 .event-create
   #event-data
     .radio-item

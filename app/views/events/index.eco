@@ -1,5 +1,7 @@
 <div class="event-select">
+  <!--
   <input type="text" id="event-filter" class="search" placeholder="Search for events...">
+  -->
 
   <div class="event-list">
     <ul>

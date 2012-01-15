@@ -1,10 +1,12 @@
 <div class="event">
-  <div class="event-visual">Graph here.</div>
+  <div class="event-visual">
+    Graph here.
+  </div>
   <div class="event-summary">
-    Recent:
-    <ul>
+    <h1> Recent: </h1>
+    <ul class="event-recent-list">
       <% for instance in @recent(5): %>
-        <li>
+        <li class="event-recent-item">
           <%= @human_time(instance.timestamp) %>
           <% for setting, _ of @event.config: %>
             <%= setting %>: <%= instance.settings[setting] %>
