@@ -1,1 +1,1 @@
-web: bundle exec ruby heumon.rb -p $PORT
+web: serveup ./public
