@@ -126,12 +126,34 @@ button.green {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   border: 1px solid #aad;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.30)), color-stop(0.5, rgba(255,255,255,0.10)), color-stop(0.5, rgba(255,255,255,0.00))), #7cccc4;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0.30)), color-stop(0.5, rgba(255,255,255,0.10)), color-stop(0.5, rgba(255,255,255,0.00))), #aae3dd;
   margin-left: 30px;
   margin-right: 30px;
   padding: 8px;
   margin-top: 4px;
   text-align: center;
+}
+ul.event-recent-list {
+  margin: 0;
+  padding: 0;
+}
+ul.event-recent-list li.event-recent-item {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 8px;
+  text-align: left;
+  list-style-type: none;
+}
+ul.event-recent-list li.event-recent-item:nth-child(2n) {
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  background-color: #f4f4ff;
+}
+ul.event-recent-list li.event-recent-item:nth-child(2n + 1) {
+  background-color: #fafaff;
+}
+ul.event-recent-list li.event-recent-item:last {
+  border-bottom: 0px;
 }
 .event-create #event-data .radio-item input[type="radio"],
 .event-create #event-data .radio-item input[type="checkbox"] {
