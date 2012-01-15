@@ -116,6 +116,10 @@ button.green {
   bottom: 0;
   right: 0;
 }
+.event-list ul {
+  margin: 0;
+  padding: 0;
+}
 .event-list .event-list-item {
   list-style-type: none;
   -moz-border-radius: 10px;
