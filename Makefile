@@ -9,6 +9,13 @@ heroku-deploy: | build update-cache-manifest
 	git commit public/application.css public/application.js -m "regenerated"
 	git push heroku master
 
+heroku-test-deploy: | build update-cache-manifest
+	git add public/application.css public/application.js
+	git commit public/application.css public/application.js -m "regenerated"
+	git push heroku-2 master
+
+deploy: | heroku-deploy heroku-test-deploy
+
 update-cache-manifest: VERSION=$(shell date +%s)
 update-cache-manifest:
 	sed -i -e 's,^# v.*,# v$(VERSION),' public/cache.manifest
